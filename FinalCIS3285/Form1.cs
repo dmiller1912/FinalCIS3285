@@ -12,8 +12,10 @@ namespace FinalCIS3285
 {
     public partial class Form1 : Form
     {
-        private Form1 form;
-        private Form2 form2;
+        // private Form1 form;
+        // private Form2 form2;
+        String answers;
+
         public Form1()
         {
             InitializeComponent();
@@ -43,17 +45,17 @@ namespace FinalCIS3285
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine(" " + Question[0]);
+            Console.WriteLine(" " + Quiz.questions[0]);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("a Partridge");
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("a ParaKeet");
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -61,6 +63,20 @@ namespace FinalCIS3285
 
         }
 
-        
+        private void labelQuestion_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(" " + Quiz.questions[0]);
+        }
+
+        private void answerRecord_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Equals("a partridge in a pear tree"))
+            {
+                answerRecord.Items.Add("question 1: correct");
+            } else
+            {
+                answerRecord.Items.Add("question 1: incorrect");
+            }
+        }
     }
 }

@@ -124,9 +124,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(53, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(477, 20);
+            this.label3.Size = new System.Drawing.Size(499, 20);
             this.label3.TabIndex = 26;
-            this.label3.Text = "On the third day of Christmas my true love gave to me: ";
+            this.label3.Text = "On the second day of Christmas my true love gave to me: ";
             // 
             // label4
             // 

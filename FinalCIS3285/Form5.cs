@@ -19,13 +19,13 @@ namespace FinalCIS3285
 
         private void answerRecord_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals("3 french hens"))
+            if (textBox1.Text.Equals("5 golden rings"))
             {
-                answerRecord.Items.Add("question 1: correct");
+                answerRecord.Items.Add("question 5: correct");
             }
             else
             {
-                answerRecord.Items.Add("question 1: incorrect");
+                answerRecord.Items.Add("question 5: incorrect");
             }
 
             answerRecord.Items.Add(Form1.textbox2.Text);
@@ -47,13 +47,14 @@ namespace FinalCIS3285
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           String userInput = textBox1.Text;
+           String answers = userInput;
         }
 
         private void buttonNxtQues_Click(object sender, EventArgs e)
         {
-            //Form6 f6 = new Form6();
-            //f6.ShowDialog(); //should show new form??
+            Form6 f6 = new Form6();
+            f6.ShowDialog(); //should show new form??
         }
     }
 }

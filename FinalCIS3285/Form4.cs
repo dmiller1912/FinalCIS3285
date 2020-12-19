@@ -24,13 +24,13 @@ namespace FinalCIS3285
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (textBox3.Text.Equals("3 french hens"))
+            if (textBox3.Text.Equals("4 calling birds"))
             {
-                listBox1.Items.Add("question 1: correct");
+                listBox1.Items.Add("question 4: correct");
             }
             else
             {
-                listBox1.Items.Add("question 1: incorrect");
+                listBox1.Items.Add("question 4: incorrect");
             }
 
             listBox1.Items.Add(Form1.textbox2.Text);
@@ -57,6 +57,11 @@ namespace FinalCIS3285
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }

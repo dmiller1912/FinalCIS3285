@@ -33,11 +33,11 @@ namespace FinalCIS3285
         {
             if (textBox3.Text.Equals("3 french hens"))
             {
-                listBox1.Items.Add("question 1: correct");
+                listBox1.Items.Add("question 3: correct");
             }
             else
             {
-                listBox1.Items.Add("question 1: incorrect");
+                listBox1.Items.Add("question 3: incorrect");
             }
 
             listBox1.Items.Add(Form1.textbox2.text);

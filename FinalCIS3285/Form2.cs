@@ -34,7 +34,24 @@ namespace FinalCIS3285
             f3.ShowDialog();
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (textBox3.Text.Equals("2 turtle doves"))
+            {
+                listBox1.Items.Add("question 1: correct");
+            }
+            else
+            {
+                listBox1.Items.Add("question 1: incorrect");
+            }
 
+            listBox1.Items.Add(Form1.textbox2.text);
+        }
 
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            String userInput = textBox3.Text;
+            String answers = userInput;
+        }
     }
 }

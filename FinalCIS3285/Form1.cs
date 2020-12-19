@@ -15,6 +15,7 @@ namespace FinalCIS3285
         // private Form1 form;
         // private Form2 form2;
         String answers;
+        String userInput;
 
         public Form1()
         {
@@ -34,29 +35,14 @@ namespace FinalCIS3285
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-               
-        }
         
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            Console.WriteLine(" " + Quiz.questions[0]);
-        }
-
+       
+       
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -65,7 +51,7 @@ namespace FinalCIS3285
 
         private void labelQuestion_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(" " + Quiz.questions[0]);
+           //Console.WriteLine(" " + Quiz.questions[0]);
         }
 
         private void answerRecord_SelectedIndexChanged(object sender, EventArgs e)
@@ -77,6 +63,30 @@ namespace FinalCIS3285
             {
                 answerRecord.Items.Add("question 1: incorrect");
             }
+        }
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            userInput = textBox2.Text;
+            answers = userInput;
+        }
+
+        private void WriteXmlToFile(DataSet thisDataSet)
+        {
+            if (thisDataSet.Equals(answers)) { return; }
+
+            string fileName = "Answers.xml";
+
+            System.IO.FileStream stream = new System.IO.FileStream
+            (fileName, System.IO.FileMode.Create);
+
+            System.Xml.XmlTextWriter xmlWriter =
+            new System.Xml.XmlTextWriter(stream,
+            System.Text.Encoding.Unicode);
+
+            thisDataSet.WriteXml(xmlWriter);
+            xmlWriter.Close();
+
         }
     }
 }

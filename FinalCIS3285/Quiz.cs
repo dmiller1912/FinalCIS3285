@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalCIS3285
 {
-    class Quiz : Program
+   public class Quiz : Program
     {
         String userInput;
         string[] questions = new String[12];

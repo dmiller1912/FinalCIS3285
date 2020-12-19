@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalCIS3285
 {
-    class Question : Quiz
+   public class Question : Quiz
     {
        //Question[] questions = new Question[12];
 

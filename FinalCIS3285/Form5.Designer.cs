@@ -69,6 +69,7 @@ namespace FinalCIS3285
             this.buttonNxtQues.TabIndex = 18;
             this.buttonNxtQues.Text = "Next Question";
             this.buttonNxtQues.UseVisualStyleBackColor = true;
+            this.buttonNxtQues.Click += new System.EventHandler(this.buttonNxtQues_Click);
             // 
             // buttonPrevious
             // 
@@ -78,6 +79,7 @@ namespace FinalCIS3285
             this.buttonPrevious.TabIndex = 17;
             this.buttonPrevious.Text = "Previous Question";
             this.buttonPrevious.UseVisualStyleBackColor = true;
+            this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
             // labelQuestion
             // 
@@ -105,6 +107,7 @@ namespace FinalCIS3285
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(471, 22);
             this.textBox1.TabIndex = 21;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // answerRecord
             // 
@@ -114,6 +117,7 @@ namespace FinalCIS3285
             this.answerRecord.Name = "answerRecord";
             this.answerRecord.Size = new System.Drawing.Size(257, 132);
             this.answerRecord.TabIndex = 22;
+            this.answerRecord.SelectedIndexChanged += new System.EventHandler(this.answerRecord_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -123,6 +127,7 @@ namespace FinalCIS3285
             this.button1.TabIndex = 23;
             this.button1.Text = "submit answer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form5
             // 

@@ -14,7 +14,7 @@ namespace FinalCIS3285
         private String text;
         private String answer;
 
-        public Question()
+        public Question(String text, String answer)
         {
             text = "";
             answer = "";

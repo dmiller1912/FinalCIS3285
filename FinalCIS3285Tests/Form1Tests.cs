@@ -46,5 +46,45 @@ namespace FinalCIS3285.Tests
         {
             Assert.Fail();
         }
+
+        public void Form6Test()
+        {
+
+        }
+
+        public void Form7Test()
+        {
+
+        }
+
+        public void Form8Test()
+        {
+
+        }
+
+        public void Form9Test()
+        {
+
+        }
+
+        public void Form10Test()
+        {
+
+        }
+
+        public void Form11Test()
+        {
+
+        }
+
+        public void Form12Test()
+        {
+
+        }
+
+        public void Form13Test()
+        {
+
+        }
     }
 }
